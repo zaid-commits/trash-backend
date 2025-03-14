@@ -20,7 +20,7 @@ if (!fs.existsSync(uploadsDir)) {
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://trash-docs-flex.vercel.app','https://trash-dump.vercel.app/']
+    origin: ['*']
 }));
 app.use(express.json());
 
